@@ -30,10 +30,10 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-/*   height: 800px;
+   height: 800px;
    min-height: 100px;
    width: 100%;
-*/
+
     background: #161415 url(../images/banner.png) no-repeat top center;
 
    background-size: cover !important;
