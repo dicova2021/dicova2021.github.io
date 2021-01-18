@@ -33,11 +33,8 @@ header {
 /*   height: 800px;
    min-height: 100px;
    width: 100%;
-/*   background: #161415 url(../images/header-background.jpg) no-repeat top center;*/
-/*   background: #161415 url(../images/IMG_7877.JPG) no-repeat top center;*/
-/*    background: #161415 url(../images/signal_spectgm.png) no-repeat top center; */
-   /*   background: #161415 url(../images/gammatone_in_freq_domain.png) no-repeat top center;*/
-    background: #161415 url(../images/human_speech_bckgnd.png) no-repeat top center;
+*/
+    background: #161415 url(../images/banner.png) no-repeat top center;
 
    background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -63,20 +60,20 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 5px/0.1em 'opensans-bold', sans-serif;
+   font: 20px/0.8em 'opensans-bold', serif;
 /*   color: #BFEFFF;*/
-   color: #CDB5CD;
-   letter-spacing: -2px;
+   color: #11ABB0;
+   letter-spacing: 8px;
    margin: 0 auto -20px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #FF0000;
+   color: #FFF;
    margin: 0 auto;
    width: 70%;
-/*  background-color:white;*/
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+   background-color:#11ABB0;
+   text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {

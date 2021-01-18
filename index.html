@@ -83,22 +83,24 @@ function showHide(shID) {
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li class="current"><a class="smoothscroll" href="#styles">About</a></li>
+            <li class="current"><a class="smoothscroll" href="#about">About</a></li>
             <li class="current"><a class="smoothscroll" href="#timeline">Timeline</a></li>
-            <li class="current"><a class="smoothscroll" href="#extras">Tracks</a></li>
+            <li class="current"><a class="smoothscroll" href="#challenges">Challenges</a></li>
+            <li class="current"><a class="smoothscroll" href="#organizers">Organizers</a></li>
+            <li class="current"><a class="smoothscroll" href="#faqs">FAQ</a></li>
+            <li class="current"><a class="smoothscroll" href="#contactus">Contact Us</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">DICOVA</h1>
+            <h1 class="responsive-headline">DiCOVA</h1>
             <br><br>
              <h3 class="responsive-headline">Diagnosing COVID-19 using Acoustics</h3>
             <h3 class="responsive-headline">Special Session in Interspeech 2021</h3>
                 
-            <br> To know more <a class="smoothscroll" href="#styles">scroll</a> down.
-            <hr />
+             <hr />
             <ul class="social">
                <li><a href="https://twitter.com/INTERSPEECH2021"><i class="fa fa-twitter"></i></a></li>
             </ul>
@@ -106,14 +108,14 @@ function showHide(shID) {
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#styles"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
 
    </header> <!-- Header End -->
 
    <!-- Style Guide Section
    ================================================== -->
-   <section id="styles" style="padding: 10px 0 12px; background: #fff;">
+   <section id="about" style="padding: 10px 0 12px; background: #fff;">
 
       <div class="row add-bottom">
 
@@ -121,13 +123,10 @@ function showHide(shID) {
 
             <h1>About</h1>
             <p class="drop-cap">
-                The COVID-19 pandemic has emerged as the most significant health crisis of recent times. At the time of writing, more than 40 million cases and more than 1.5 million casualties have been reported from about 200 countries across the world. One of the key con-stituents in the response to the crisis has been to effectively imtplement wide-spread testing. The reverse transcription polymerase chain reaction (RT-PCR) is currently the gold standard method used for testing poses several concerns with regards to scalability of test-ing such as cost, time and risk associated with the participants as well as the health workers. Some of these challenges have been partially alleviated by rapid antigen test (RAT). However, as with all laboratory based tests, social contacts continue to pose a serious challenge in deploying testing methodology to population masses.In this context, we hypothesize that the diagnostic technology may be shifted from the microbiology of the virus to the detection of the acoustic symptoms induced by the infection. In particular, acous-tic diagnostics of Covid-19 offer the potential of a quick, easily accessible, and cost-effective point-of-care screening methodology.</p>
-                
-            <p class="drop-cap">
-                Scientific rationale for acoustic based methodology comes from the observation that the vocal apparatus including the lungs bear most of the viral load in many of the infected patients. This may potentially present itself as a change in the acoustic characteristics of sounds like breathing, coughing and speech. In this special session, we plan to provide a training, development and blind test for evaluating the systems. In particular, we plan to standardize the training and test and to benchmark the technologies. The dataset contains a wide range of acoustic signals (coughing, breathing, sustained phonation and counting). We plan to have participants choose the multiple signal dimensions to boost their detection. The performance evaluation will be based on using the area under the curve (AUC) metric as well as the specificity at 90% sensitivity. As the dataset is open source, we will also encourage all the participants to open source their technologies to aid and advance future research.</p>
-            
-             <p class="drop-cap">
-                This special session is an “oral session” of duration 2.5 hrs (6 paper presentations and one invited talk). The timeliness and the importance of the problem addressed warrants focussed effort from the researchers across the globe, including from the diverse fields of medical and respiratory sciences, mathematical sciences, and machine learning engineers. We also anticipate that many industry professionals and startups to be interested in this field of device diagnostics and coupling them with wearable signal processing. This session will provide a forum for networking and dissemination of latest findings on the topic. Also, the data will be provided for the challenge and hence, all the papers in the session will report work on the same dataset.</p>
+                The COVID-19 pandemic has resulted in more than 40 million infections, and more than 1.5 million casualties. The global crisis spans across 200 countries. Large scale testing, social distancing, and using face masks have been critical measures to help contain the spread of the infection. While the list of symptoms is regular updated, it is established that COVID-19 disease seriously impairs normal functioning of the respiratory system. <b>Does this alter the acoustic characteristics of breathe, cough, and speech sounds produced through the respiratory system? This is an open question, and by participating in this special session at Interspeech 2021 you will be taking a dive to find some answers</b>.
+                A COVID-19 diagnosis methodology based on acoustic signal analysis can provide a remote, sclable, economical means for testing of individuals. This can supplement the nucleotides based virus testing methods, such as RT-PCR and RAT.
+                The timeliness and the importance of the open question warrants focussed effort from the researchers across the globe, including from the fields of medical and respiratory sciences, mathematical sciences, and machine learning engineers.
+             </p>
             <hr>
          </div>
       </div> <!-- Row End-->
@@ -153,15 +152,15 @@ function showHide(shID) {
       </div>
 </section> 
 
-<section id="tracks" style="padding: 10px 0 12px; background: #fff;">
+<section id="challenges" style="padding: 10px 0 12px; background: #fff;">
 
       <div class="row add-bottom">
 
          <div class="twelve columns">
 
-            <h1>Tracks</h1>
+            <h1>Challenges</h1>
 		<dl class="lining" align="justify">
-			      <dt><b>Track 1: Cough</b>
+			      <dt><b>Track 1: Cough Sound</b>
 			      <a href=""></a>
                       <br><a href="#" id="find1-show" class="showLink" onclick="showHide('find1');return false;">Click to expand.</a></dt>
 				  <div id="find1" class="more">
@@ -170,7 +169,7 @@ function showHide(shID) {
 				      <p><a href="#" id="find1-hide" class="hideLink" onclick="showHide('find1');return false;">Hide this content.</a></p>
 				  </div>
                     <br>
-			      <dt><b>Track 2: Breathe</b>
+			      <dt><b>Track 2: Multi Sound</b>
 			      <a href=""></a>
                       <br><a href="#" id="find2-show" class="showLink" onclick="showHide('find2');return false;">Click to expand.</a></dt>
 				  <div id="find2" class="more">
@@ -179,34 +178,6 @@ function showHide(shID) {
 				      <p><a href="#" id="find2-hide" class="hideLink" onclick="showHide('find2');return false;">Hide this content.</a></p>
 				  </div>
                     <br>
-			      <dt><b>Track 3: Vowels</b>
-			      <a href=""></a>
-                      <br><a href="#" id="find3-show" class="showLink" onclick="showHide('find3');return false;">Click to expand.</a></dt>
-				  <div id="find3" class="more">
-				  <p><a href="#" id="find3-hide" class="hideLink" onclick="showHide('find3');return false;">Hide this content.</a></p>
-				      <dd>Add details.</dd>
-				      <p><a href="#" id="find3-hide" class="hideLink" onclick="showHide('find3');return false;">Hide this content.</a></p>
-				  </div>
-                  <br>
-			      <dt><b>Track 4: Speech</b>
-			      <a href=""></a>
-                      <br><a href="#" id="find4-show" class="showLink" onclick="showHide('find4');return false;">Click to expand.</a></dt>
-				  <div id="find4" class="more">
-				  <p><a href="#" id="find4-hide" class="hideLink" onclick="showHide('find4');return false;">Hide this content.</a></p>
-				      <dd>Add details.</dd>
-				      <p><a href="#" id="find4-hide" class="hideLink" onclick="showHide('find4');return false;">Hide this content.</a></p>
-				  </div>
-                  <br>
-			      <dt><b>Track 5: Combinations</b>
-			      <a href=""></a>
-                      <br><a href="#" id="find5-show" class="showLink" onclick="showHide('find5');return false;">Click to expand.</a></dt>
-				  <div id="find5" class="more">
-				  <p><a href="#" id="find5-hide" class="hideLink" onclick="showHide('find5');return false;">Hide this content.</a></p>
-				      <dd>Add details.</dd>
-				      <p><a href="#" id="find5-hide" class="hideLink" onclick="showHide('find5');return false;">Hide this content.</a></p>
-				  </div>
-                  <br>
-
      	        </dl>
             <hr>
 
@@ -214,6 +185,40 @@ function showHide(shID) {
 
       </div>
 </section>
+    
+<section id="organizers" style="padding: 10px 0 12px; background: #fff;">
+
+      <div class="row add-bottom">
+         <div class="twelve columns">
+            <h1>Organizers</h1>
+             
+		 <dl class="lining" align="justify">
+			 <dt><a href ="http://www.leap.ee.iisc.ac.in/sriram/">Sriram Ganapathy</a></dt>
+             <dd>Assistant Professor, Indian Institute of Science, Bangalore, India</dd>
+			 <dt><a href="http://www.ee.iisc.ac.in/people/faculty/prasantg/">Prasanta Kumar Ghosh</a></dt>
+             <dd>Associate Professor, Indian Institute of Science, Bangalore, India</dd>
+			 <dt><a href="https://neerajww.github.io/">Neeraj Kumar Sharma</a></dt>
+             <dd>CV Raman Postdoctoral Researcher, Indian Institute of Science, Bangalore, India</dd>
+			 <dt><a href="https://ece.iisc.ac.in/~sraj/">Srikanth Raj Chetupalli</a></dt>
+             <dd>Postdoctoral Researcher, Indian Institute of Science, Bangalore, India
+             </dd>
+     	  </dl>
+          <hr>
+         </div>
+      </div>
+</section> 
+
+<section id="faqs" style="padding: 10px 0 12px; background: #fff;">
+
+      <div class="row add-bottom">
+         <div class="twelve columns">
+            <h1>Frequently Asked Questions</h1>
+             To be updated soon.
+             
+          <hr>
+         </div>
+      </div>
+</section> 
 
    <!-- footer
    ================================================== -->
