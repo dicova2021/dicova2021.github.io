@@ -60,15 +60,17 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 20px/0.8em 'opensans-bold', serif;
-/*   color: #BFEFFF;*/
+/*   font: 20px/0.8em 'opensans-bold', serif;*/
+   font: 20px/0.8em "montserrat-bold", serif;
+   text-rendering: optimizeLegibility;
    color: #11ABB0;
    letter-spacing: 8px;
    margin: 0 auto -20px auto;
+   border-color:#11ABB0;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
+   font: 18px/1.9em 'opensans-bold', serif;
    color: #FFF;
    margin: 0 auto;
    width: 70%;
