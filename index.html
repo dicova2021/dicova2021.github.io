@@ -199,10 +199,12 @@ function showHide(shID) {
 				  <div id="find1" class="more">
 				  <p><a href="#" id="find1-hide" class="hideLink" onclick="showHide('find1');return false;">Hide this content.</a></p>
                     <ul class="lining" align="justify">
-                        <li>a. The goal is to use cough sound recordings to detect COVID-19. You will be provided with train/val/eval datasets, lists, and a baseline system for this to enable design of your own models and beat the baseline system performance.</li>
-                        <li>b. Subsequently, a blind evaluation dataset will also be made available. You will be submit your model performance scores on this data to a leaderboard interface (setup in Codalab) featuring performance of other teams on the same dataset.</li>
-                        <li>c. The performance metric for evaluation will be based on using the area under the curve (AUC) metric, and the specificity at 90% sensitivity.</li>
-                        <li>d. You will submit a system report document describing your system by the deadline.</li>
+                     <li>a. The goal is to use <b>cough</b> sound recordings from COVID-19 and non-COVID-19 individuals for the task of COVID-19 detection.</li>
+                     <li>b. You will be provided with a train/val audio dataset, train/val lists, and a baseline system to enable design of your own models.</li>
+                     <li>c. Subsequently, a blind evaluation dataset will be provided to all participants. You will submit your model performance scores on the blind set and the validation lists to a leaderboard interface (setup in Codalab), featuring performance of other teams on the same dataset.</li>
+                     <li>d. The performance metric for evaluation will be based on using the area under the curve (AUC) and the specificity at 80% sensitivity.</li>
+                     <li>e. All participants will be required to submit a system description report (2-4 pages) to the organizers. All participants are also encouraged to submit their findings to the DiCOVA Special Session, Interspeech 2021 for peer-review.</li>
+                     <li>f. You are free to use any other dataset (excluding the <a href="https://github.com/iiscleap/Coswara-Data">Project Coswara</a> dataset) for data augmentation.</li>
                         </ul>
 				      <p><a href="#" id="find1-hide" class="hideLink" onclick="showHide('find1');return false;">Hide this content.</a></p>
 				  </div>
@@ -213,9 +215,11 @@ function showHide(shID) {
 				  <div id="find2" class="more">
 				  <p><a href="#" id="find2-hide" class="hideLink" onclick="showHide('find2');return false;">Hide this content.</a></p>
                     <ul class="lining" align="justify">
-                        <li>a. The goal is to evaluate the effectiveness of COVID-19 detection using breath, cough, and speech sound recordings collected from any source.</li>
-                        <li>b. One such source is the Project Coswara which has released such a dataset at: <a href="https://github.com/iiscleap/Coswara-Data">click here</a>. You are encouraged to use this or any other dataset of your choice suiting this track.
-                        <li>c. This track will not feature a leaderboard or baseline system release.</li>
+                     <li>a. The goal is to use <b>breathing, sustained phonation, and speech</b> sound recordings from COVID-19 and non-COVID-19 individuals for any kind of detailed analysis which can contribute towards COVID-19 detection.</li>
+                     <li>b. You will be provided an audio dataset, and also train/val/eval lists which can be used to report results.</li>
+                     <li>c. The participants are encouraged to do their own analysis and evaluation, and submit their findings to the DiCOVA Special Session, Interspeech 2021 for peer-review.
+                     <li>d. There will be no baseline system, blind test, and leaderboard in this track.</li>
+                     <li>e. You are free to use any other dataset (excluding the <a href="https://github.com/iiscleap/Coswara-Data">Project Coswara</a> dataset) for data augmentation.</li>
                      </ul>
 				      <p><a href="#" id="find2-hide" class="hideLink" onclick="showHide('find2');return false;">Hide this content.</a></p>
 				  </div>
@@ -307,7 +311,7 @@ function showHide(shID) {
              <dt><b>Q. Are there other datasets I can use?</b>
              </dt>
              <br>
-             <dd> A. For Track-1 you are not allowed to use <a href="https://github.com/iiscleap/Coswara-Data">Project Coswara data</a>. You can use any other data with proper citation of the source in the report and the Interspeech manuscript. For Track-2, we require you to use some or all of <a href="https://github.com/iiscleap/Coswara-Data">Project Coswara data</a> but not Track-1 data. Here again, you are free to use any other sound dataset, and do remember to cite the source in the report and the Interspeech manuscript.
+             <dd> A. For both Track-1 and Track-2 you are not allowed to use <a href="https://github.com/iiscleap/Coswara-Data">Project Coswara</a> data. You can use any other data with proper citation of the source in the report and the Interspeech manuscript. 
              </dd>
              
              <dt><b>Q. How do I submit my findings obtained by participating in this challenge to Interspeech 2021?</b>
