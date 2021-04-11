@@ -91,6 +91,7 @@ function showHide(shID) {
             </div> -->
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li class="current"><a class="smoothscroll" href="#about">About</a></li>
+            <li class="current"><a class="smoothscroll" href="#results">Results</a></li> 
             <li class="current"><a class="smoothscroll" href="#timeline">Timeline</a></li>
             <li class="current"><a class="smoothscroll" href="#challenges">Tracks</a></li>
             <li class="current"><a class="smoothscroll" href="#register">Register</a></li>
@@ -143,8 +144,9 @@ function showHide(shID) {
              </p>
             </div>
              <ul class="lining" align="middle">
+             <li><h5>The Challenge is closed. See the <a href= "#results" style="color:#11ABB0">Results</a> section to know more.</h5></li>
+             <li><h5>DiCOVA Challenge paper is up!  <a href= "https://arxiv.org/abs/2103.09148" style="color:#11ABB0">arXiv link</a></h5></li>
              <li><h5>The Track-1 Challenge Leaderboard is live! <a href= "https://competitions.codalab.org/competitions/29640" style="color:#11ABB0">Click here</a></h5></li>
-             <li><h5>DiCOVA Challenge paper is up!  <a href= "https://arxiv.org/pdf/2103.09148.pdf" style="color:#11ABB0">arXiv link</a></h5></li>
              <li><h5><a href="./docs/DiCOVA_Interspeech2021_flyer.pdf" style="color:#11ABB0">Click here</a> to download the flyer.</h5></li>
                </ul>
             <hr>
@@ -153,7 +155,90 @@ function showHide(shID) {
         </div> <!-- Row End-->
 </section>
     
-    
+
+<section id="results" style="padding: 10px 0 12px; background: #fff;">
+    <div class="row add-bottom" id="chapter">
+         <div class="twelve columns">
+            <h1>Results</h1>
+            <a><img width="350" height="300" class="pull-right" alt="sample-image" src="./images/best_perfm_matrix.png"></a>
+            The DiCOVA Track-1 Challenge (COVID-19 detection fromm cough sounds) received registrations from 85 teams, spread across the globe and coming from industry, academia and independent individuals. All these teams were sent the challenge datasets. Of these teams, 29 participated in evaluating their systems against the blind test set (233 audio files).
+            For this, a leaderboard was set up in Codalab and teams posted a COVID probability score for each test audio file. In response, they received the AUC score (area under the ROC curve) computed over the 233 test audio files. A high AUC (0-100%) implies better performance. Team T-1 posted an AUC of 87.04% and finished on top of the leaderboard. On the right you can see the classification performance of this team on the blind test set.
+            Below we illustrate a few of our observations on the activity seen on the leaderboard.
+             
+            <p class="drop-cap">The leaderboard saw participation from 29 teams.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_world_map.html" width="800" height="400"></iframe>
+            <br>
+             
+            <p class="drop-cap">Each team was given a maximum of 25 attempts to evaluate their system performance against the hidden blind test labels. The AUCs of many of these systems performed better than the baseline system.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_histogram_aucs.html" width="700" height="500"></iframe>
+            <br>
+
+            <p class="drop-cap">There was a good diversity in kinds of features used by the teams. These features ranged from simple hand-crafted acoustic features (like, ZCR, energy) to advanced acoustic representations (embeddings) obtained using pre-trained DNNs.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_feature_types.html" width="400" height="400"></iframe>
+            <br>
+
+            <p class="drop-cap">The novelty of the task made teams also experiment with diverse kinds of classifiers.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_classifier_types.html" width="400" height="400"></iframe>
+            <br>
+
+            <p class="drop-cap">The challenge task required handling class data imbalance. For this, several teams experimented with data augmentation (adding noise, reverberation, pitch shifting, etc., or cough files from other public datasets, like COUGHVID), and system fusion.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_model_types.html" width="300" height="400"></iframe>
+            <br>
+
+            <p class="drop-cap">The best performance was posted by team T-1 with an AUC of 87.04%, significantly improving over the baseline system performance (69.85%). This performance was followed by two close competitors, team T-2 posting 85.43% AUC and team T-3 posting 85.35% AUC. It was wonderful to see nine teams scores above 80% AUC!
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_barplot_test_best_aucs.html" width="700" height="400"></iframe>
+            <br>
+
+            <p class="drop-cap">The evaluation was open for 22 days. In the initial days only a few teams evaluated their systems. As days passed, the leaderboard activity began to gain pace, and teams started improving their AUCs.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_test_auc_teams_days.html" width="800" height="400"></iframe>
+            <br>
+             
+            <p class="drop-cap">How did the best AUC on the leaderboard change over evaluation days? 
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_best_auc_so_far.html" width="700" height="400"></iframe>
+            <br>
+
+            <p class="drop-cap">Does more evaluation by a team imply a better AUC? There is some correlation :)!
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_scatter_auc_entries.html" width="500" height="500"></iframe>
+            <br>
+
+            <p class="drop-cap">How does the performance on the test set compare against the performance on the val set?
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_scatter_test_val.html" width="600" height="500"></iframe>
+            <br>
+
+            <p class="drop-cap">An important metric in evaluating a diagnosis tool is its specificity at some sensitivity. For the challenge we evaluated the specificity at 80% sensitivity. Below we show how different systems fared in this. The best specificity obtained was 83.33% by team T-1.
+            </p> 
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_scatter_spec_sens.html" width="600" height="500"></iframe>
+            <br>
+            <p class="drop-cap">And finally, here are the ROCs of the 29 systems corresponding to the best system of each team.
+            </p>
+            <br>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://dicova2021.github.io/images/plotly/fig_rocs.html" width="600" height="500"></iframe>
+            <br>
+        </div>
+    </div>
+</section> 
+
 <section id="timeline" style="padding: 10px 0 12px; background: #fff;">
 
       <div class="row add-bottom">
@@ -161,26 +246,23 @@ function showHide(shID) {
             <h1>Timeline (Tentative) [23:59hrs AOE]</h1>
              
 		 <dl class="lining" align="justify">
-			      <dt><b><s>Registrations Open :</b></dt>
-				       4th Feb 2021 </s> <dt><b> &emsp;
-                     <s>Registrations Close: </b></dt>1st Mar</s><br>
-			      <dt><b><s>Data Release (Train and Dev):</b></dt>
-            	       15th Feb 2021</s><br>
-			      <dt><b><s>Baseline System Release:</b></dt>
-                      22nd Feb 2021</s><br>
-               <dt><b><s>Evaluation data and Leaderboard active:</b></dt>
-                      1st Mar 2021</s><br>
-               <!-- <dt><b>Registrations Close:</b></dt>
-                      1st Mar 2021 -->
-               <dt><b><s>Final evaluation Closes:</b></dt>
-                      22nd Mar 2021</s><br>
-               <dt><b><s>System Report submission:</b></dt>
-                      23rd Mar 2021</s><br>
-               <dt><b><s>Interspeech Abstract submission:</b></dt>
-                      26th Mar 2021</s><br>
-               <dt><b><s>Interspeech Paper submission:</b></dt>
-            	       2nd Apr 2021</s><br>
-                      
+             <dt><s><b>Registrations Open :</b></s></dt>
+				       <s>4th Feb 2021 </s><dt>&emsp;
+                 <s><b>Registrations Close: </b></s></dt><s>1st Mar</s><br>
+             <dt><s><b>Data Release (Train and Dev):</b></s></dt>
+            	       <s>15th Feb 2021</s><br>
+             <dt><s><b>Baseline System Release:</b></s></dt>
+                       <s>22nd Feb 2021</s><br>
+             <dt><s><b>Evaluation data and Leaderboard active:</b></s></dt>
+                       <s>1st Mar 2021</s><br>
+             <dt><s><b>Final evaluation Closes:</b></s></dt>
+                       <s>22nd Mar 2021</s><br>
+             <dt><s><b>System Report submission:</b></s></dt>
+                       <s>23rd Mar 2021</s><br>
+             <dt><s><b>Interspeech Abstract submission:</b></s></dt>
+                       <s>26th Mar 2021</s><br>
+             <dt><s><b>Interspeech Paper submission:</b></s></dt>
+            	       <s>2nd Apr 2021</s>
      	  </dl>
           <hr>
          </div>
